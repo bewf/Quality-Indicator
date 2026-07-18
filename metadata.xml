@@ -1,0 +1,8 @@
+<metadata>
+  <name>Quality Indicator</name>
+  <directory>QualityIndicator</directory>
+  <description>Shows every item's quality (0-4) on the pedestal.</description>
+  <version>1.2.0</version>
+  <visibility>Private</visibility>
+  <tags>items</tags>
+</metadata>
