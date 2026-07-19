@@ -74,13 +74,16 @@ local QUALITY_COLORS = {
 }
 
 -- Load sprites for quality badges
-local QUALITY_ANM2_FILES = {
-    [0] = "poo0sprite.anm2",
-    [1] = "penny1sprite.anm2",
-    [2] = "drop2sprite.anm2",
-    [3] = "halo3sprite.anm2",
-    [4] = "godhead4sprite.anm2",
-}
+local QUALITY_SPRITES = {}
+for quality = 0, 4 do
+    local sprite = Sprite()
+    if sprite:Load("gfx/q" .. quality .. ".anm2", true) then
+        sprite:SetFrame(0, 0)
+        QUALITY_SPRITES[quality] = sprite
+    else
+        Isaac.DebugString("Quality Indicator: could not load gfx/q" .. quality .. ".anm2 - make sure it's at resources/gfx/q" .. quality .. ".anm2 in the mod folder")
+    end
+end
 
 local QUALITY_SPRITES = {}
 for quality = 0, 4 do
