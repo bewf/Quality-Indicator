@@ -2,7 +2,7 @@
 	<Info CreatedBy="QualityIndicator" CreatedOn="07/18/2026" Fps="30" Version="31"/>
 	<Content>
 		<Spritesheets>
-			<Spritesheet Path="penny1sprite32.png" Id="0"/>
+			<Spritesheet Path="gfx/penny1sprite32.png" Id="0"/>
 		</Spritesheets>
 		<Layers>
 			<Layer Name="Main" Id="0" SpritesheetId="0"/>

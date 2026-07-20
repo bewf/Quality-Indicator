@@ -85,19 +85,6 @@ for quality = 0, 4 do
     end
 end
 
-local QUALITY_SPRITES = {}
-for quality = 0, 4 do
-    local fileName = QUALITY_ANM2_FILES[quality]
-    local sprite = Sprite()
-    if sprite:Load("gfx/" .. fileName, true) then
-        -- Set to the first frame of the first animation (index 0, frame 0)
-        sprite:SetFrame(0, 0)
-        QUALITY_SPRITES[quality] = sprite
-    else
-        Isaac.DebugString("Quality Indicator: could not load gfx/" .. fileName .. " - make sure it's at resources/gfx/" .. fileName .. " in the mod folder")
-    end
-end
-
 local function hasCurseOfTheBlind()
     local game = Game()
     if not game then return false end
